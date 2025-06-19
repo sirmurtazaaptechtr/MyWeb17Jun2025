@@ -19,6 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['user_email'] = $user['email'];
             $_SESSION['user_name'] = $user['name'];
             $_SESSION['user_role'] = $user['role'];
+            $_SESSION['profile_pic'] = $user['profile_pic'];
 
             // Redirect to dashboard or home page
             header("Location: index.php");
@@ -39,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+  <title>Login - My Application</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -121,7 +122,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                       <button class="btn btn-primary w-100" type="submit">Login</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Don't have account? <a href="#">Create an account</a></p>
+                      <p class="small mb-0">Don't have account? <a href="register.php">Create an account</a></p>
                     </div>
                   </form>
 

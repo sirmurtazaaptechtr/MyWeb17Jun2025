@@ -12,7 +12,7 @@ if(!$_SESSION['logged_in']) {
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>My Application</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -218,14 +218,14 @@ if(!$_SESSION['logged_in']) {
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+            <img src="<?php echo $_SESSION['profile_pic']?>" alt="profile picture of <?php echo $_SESSION['user_name']?>" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2"><?php echo $_SESSION['user_name']?></span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
+              <h6><?php echo $_SESSION['user_name']?></h6>
+              <span><?php echo $_SESSION['user_role']?></span>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -262,7 +262,7 @@ if(!$_SESSION['logged_in']) {
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="logout.php">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
