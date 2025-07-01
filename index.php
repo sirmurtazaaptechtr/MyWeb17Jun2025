@@ -1,651 +1,203 @@
-<?php include('inc.header.php'); ?>
-
-  <main id="main" class="main">
-
-    <div class="pagetitle">
-      <h1>Dashboard</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
+<?php include('inc.header.php');?>
+    <!-- Start Banner Hero -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
         </ol>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <section class="section dashboard">
-      <div class="row">
-
-        <!-- Left side columns -->
-        <div class="col-lg-8">
-          <div class="row">
-
-            <!-- Sales Card -->
-            <div class="col-xxl-4 col-md-6">
-              <div class="card info-card sales-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Sales <span>| Today</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-cart"></i>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 text-success"><b>Zay</b> eCommerce</h1>
+                                <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
+                                <p>
+                                    Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). 
+                                    This template is 100% free provided by <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank">TemplateMo</a> website. 
+                                    Image credits go to <a rel="sponsored" class="text-success" href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
+                                    <a rel="sponsored" class="text-success" href="https://unsplash.com/" target="_blank">Unsplash</a> and
+                                    <a rel="sponsored" class="text-success" href="https://icons8.com/" target="_blank">Icons 8</a>.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ps-3">
-                      <h6>145</h6>
-                      <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
-
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Proident occaecat</h1>
+                                <h3 class="h2">Aliquip ex ea commodo consequat</h3>
+                                <p>
+                                    You are permitted to use this Zay CSS template for your commercial websites. 
+                                    You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-
-              </div>
-            </div><!-- End Sales Card -->
-
-            <!-- Revenue Card -->
-            <div class="col-xxl-4 col-md-6">
-              <div class="card info-card revenue-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Revenue <span>| This Month</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-currency-dollar"></i>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Repr in voluptate</h1>
+                                <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                <p>
+                                    We bring you 100% free CSS templates for your websites. 
+                                    If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ps-3">
-                      <h6>$3,264</h6>
-                      <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
-
-                    </div>
-                  </div>
                 </div>
-
-              </div>
-            </div><!-- End Revenue Card -->
-
-            <!-- Customers Card -->
-            <div class="col-xxl-4 col-xl-12">
-
-              <div class="card info-card customers-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Customers <span>| This Year</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-people"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>1244</h6>
-                      <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div><!-- End Customers Card -->
-
-            <!-- Reports -->
-            <div class="col-12">
-              <div class="card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Reports <span>/Today</span></h5>
-
-                  <!-- Line Chart -->
-                  <div id="reportsChart"></div>
-
-                  <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                      new ApexCharts(document.querySelector("#reportsChart"), {
-                        series: [{
-                          name: 'Sales',
-                          data: [31, 40, 28, 51, 42, 82, 56],
-                        }, {
-                          name: 'Revenue',
-                          data: [11, 32, 45, 32, 34, 52, 41]
-                        }, {
-                          name: 'Customers',
-                          data: [15, 11, 32, 18, 9, 24, 11]
-                        }],
-                        chart: {
-                          height: 350,
-                          type: 'area',
-                          toolbar: {
-                            show: false
-                          },
-                        },
-                        markers: {
-                          size: 4
-                        },
-                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
-                        fill: {
-                          type: "gradient",
-                          gradient: {
-                            shadeIntensity: 1,
-                            opacityFrom: 0.3,
-                            opacityTo: 0.4,
-                            stops: [0, 90, 100]
-                          }
-                        },
-                        dataLabels: {
-                          enabled: false
-                        },
-                        stroke: {
-                          curve: 'smooth',
-                          width: 2
-                        },
-                        xaxis: {
-                          type: 'datetime',
-                          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-                        },
-                        tooltip: {
-                          x: {
-                            format: 'dd/MM/yy HH:mm'
-                          },
-                        }
-                      }).render();
-                    });
-                  </script>
-                  <!-- End Line Chart -->
-
-                </div>
-
-              </div>
-            </div><!-- End Reports -->
-
-            <!-- Recent Sales -->
-            <div class="col-12">
-              <div class="card recent-sales overflow-auto">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Recent Sales <span>| Today</span></h5>
-
-                  <table class="table table-borderless datatable">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Customer</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Brandon Jacob</td>
-                        <td><a href="#" class="text-primary">At praesentium minu</a></td>
-                        <td>$64</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2147</a></th>
-                        <td>Bridie Kessler</td>
-                        <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
-                        <td>$47</td>
-                        <td><span class="badge bg-warning">Pending</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2049</a></th>
-                        <td>Ashleigh Langosh</td>
-                        <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
-                        <td>$147</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Angus Grady</td>
-                        <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
-                        <td>$67</td>
-                        <td><span class="badge bg-danger">Rejected</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Raheem Lehner</td>
-                        <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                        <td>$165</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                </div>
-
-              </div>
-            </div><!-- End Recent Sales -->
-
-            <!-- Top Selling -->
-            <div class="col-12">
-              <div class="card top-selling overflow-auto">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body pb-0">
-                  <h5 class="card-title">Top Selling <span>| Today</span></h5>
-
-                  <table class="table table-borderless">
-                    <thead>
-                      <tr>
-                        <th scope="col">Preview</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Sold</th>
-                        <th scope="col">Revenue</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-1.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a></td>
-                        <td>$64</td>
-                        <td class="fw-bold">124</td>
-                        <td>$5,828</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-2.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Exercitationem similique doloremque</a></td>
-                        <td>$46</td>
-                        <td class="fw-bold">98</td>
-                        <td>$4,508</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-3.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Doloribus nisi exercitationem</a></td>
-                        <td>$59</td>
-                        <td class="fw-bold">74</td>
-                        <td>$4,366</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-4.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Officiis quaerat sint rerum error</a></td>
-                        <td>$32</td>
-                        <td class="fw-bold">63</td>
-                        <td>$2,016</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-5.jpg" alt=""></a></th>
-                        <td><a href="#" class="text-primary fw-bold">Sit unde debitis delectus repellendus</a></td>
-                        <td>$79</td>
-                        <td class="fw-bold">41</td>
-                        <td>$3,239</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                </div>
-
-              </div>
-            </div><!-- End Top Selling -->
-
-          </div>
-        </div><!-- End Left side columns -->
-
-        <!-- Right side columns -->
-        <div class="col-lg-4">
-
-          <!-- Recent Activity -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
             </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+    <!-- End Banner Hero -->
 
-            <div class="card-body">
-              <h5 class="card-title">Recent Activity <span>| Today</span></h5>
 
-              <div class="activity">
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">32 min</div>
-                  <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
-                  <div class="activity-content">
-                    Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo officiis</a> beatae
-                  </div>
-                </div><!-- End activity item-->
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">56 min</div>
-                  <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
-                  <div class="activity-content">
-                    Voluptatem blanditiis blanditiis eveniet
-                  </div>
-                </div><!-- End activity item-->
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">2 hrs</div>
-                  <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
-                  <div class="activity-content">
-                    Voluptates corrupti molestias voluptatem
-                  </div>
-                </div><!-- End activity item-->
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">1 day</div>
-                  <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
-                  <div class="activity-content">
-                    Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a> tempore
-                  </div>
-                </div><!-- End activity item-->
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">2 days</div>
-                  <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
-                  <div class="activity-content">
-                    Est sit eum reiciendis exercitationem
-                  </div>
-                </div><!-- End activity item-->
-
-                <div class="activity-item d-flex">
-                  <div class="activite-label">4 weeks</div>
-                  <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
-                  <div class="activity-content">
-                    Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
-                  </div>
-                </div><!-- End activity item-->
-
-              </div>
-
+    <!-- Start Categories of The Month -->
+    <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Categories of The Month</h1>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
             </div>
-          </div><!-- End Recent Activity -->
-
-          <!-- Budget Report -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
+                <h5 class="text-center mt-3 mb-3">Watches</h5>
+                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
             </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">Budget Report <span>| This Month</span></h5>
-
-              <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
-
-              <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  var budgetChart = echarts.init(document.querySelector("#budgetChart")).setOption({
-                    legend: {
-                      data: ['Allocated Budget', 'Actual Spending']
-                    },
-                    radar: {
-                      // shape: 'circle',
-                      indicator: [{
-                          name: 'Sales',
-                          max: 6500
-                        },
-                        {
-                          name: 'Administration',
-                          max: 16000
-                        },
-                        {
-                          name: 'Information Technology',
-                          max: 30000
-                        },
-                        {
-                          name: 'Customer Support',
-                          max: 38000
-                        },
-                        {
-                          name: 'Development',
-                          max: 52000
-                        },
-                        {
-                          name: 'Marketing',
-                          max: 25000
-                        }
-                      ]
-                    },
-                    series: [{
-                      name: 'Budget vs spending',
-                      type: 'radar',
-                      data: [{
-                          value: [4200, 3000, 20000, 35000, 50000, 18000],
-                          name: 'Allocated Budget'
-                        },
-                        {
-                          value: [5000, 14000, 28000, 26000, 42000, 21000],
-                          name: 'Actual Spending'
-                        }
-                      ]
-                    }]
-                  });
-                });
-              </script>
-
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="./assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
+                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
             </div>
-          </div><!-- End Budget Report -->
-
-          <!-- Website Traffic -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="./assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
             </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">Website Traffic <span>| Today</span></h5>
-
-              <div id="trafficChart" style="min-height: 400px;" class="echart"></div>
-
-              <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  echarts.init(document.querySelector("#trafficChart")).setOption({
-                    tooltip: {
-                      trigger: 'item'
-                    },
-                    legend: {
-                      top: '5%',
-                      left: 'center'
-                    },
-                    series: [{
-                      name: 'Access From',
-                      type: 'pie',
-                      radius: ['40%', '70%'],
-                      avoidLabelOverlap: false,
-                      label: {
-                        show: false,
-                        position: 'center'
-                      },
-                      emphasis: {
-                        label: {
-                          show: true,
-                          fontSize: '18',
-                          fontWeight: 'bold'
-                        }
-                      },
-                      labelLine: {
-                        show: false
-                      },
-                      data: [{
-                          value: 1048,
-                          name: 'Search Engine'
-                        },
-                        {
-                          value: 735,
-                          name: 'Direct'
-                        },
-                        {
-                          value: 580,
-                          name: 'Email'
-                        },
-                        {
-                          value: 484,
-                          name: 'Union Ads'
-                        },
-                        {
-                          value: 300,
-                          name: 'Video Ads'
-                        }
-                      ]
-                    }]
-                  });
-                });
-              </script>
-
-            </div>
-          </div><!-- End Website Traffic -->
-
-          <!-- News & Updates Traffic -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
-
-              <div class="news">
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-1.jpg" alt="">
-                  <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
-                  <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-2.jpg" alt="">
-                  <h4><a href="#">Quidem autem et impedit</a></h4>
-                  <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-3.jpg" alt="">
-                  <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
-                  <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-4.jpg" alt="">
-                  <h4><a href="#">Laborum corporis quo dara net para</a></h4>
-                  <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-5.jpg" alt="">
-                  <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
-                </div>
-
-              </div><!-- End sidebar recent posts-->
-
-            </div>
-          </div><!-- End News & Updates -->
-
-        </div><!-- End Right side columns -->
-
-      </div>
+        </div>
     </section>
+    <!-- End Categories of The Month -->
 
-  </main><!-- End #main -->
 
-<?php include('inc.footer.php'); ?>
+    <!-- Start Featured Product -->
+    <section class="bg-light">
+        <div class="container py-5">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Featured Product</h1>
+                    <p>
+                        Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/feature_prod_01.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$240.00</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Gym Weight</a>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
+                            </p>
+                            <p class="text-muted">Reviews (24)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/feature_prod_02.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$480.00</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
+                            <p class="card-text">
+                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
+                            </p>
+                            <p class="text-muted">Reviews (48)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+                            </p>
+                            <p class="text-muted">Reviews (74)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Featured Product -->
+<?php include('inc.footer.php');?>
+    

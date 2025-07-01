@@ -1,16 +1,16 @@
 <?php 
 include('inc.header.php'); 
-$sql = "SELECT * FROM `categories`";
+$sql = "SELECT * FROM `products`";
 $result = mysqli_query($conn, $sql);
 ?>
  <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Categories</h1>
+      <h1>products</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-          <li class="breadcrumb-item active">categories</li>
+          <li class="breadcrumb-item active">products</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -33,10 +33,10 @@ $result = mysqli_query($conn, $sql);
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Categories</h5>
+              <h5 class="card-title">Products</h5>
 
                 <div class="text-start mb-3">
-                    <a href="category.create.php" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Add New Category</a>
+                    <a href="product.create.php" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Add New product</a>
                 </div>
 
               <!-- Table with stripped rows -->
@@ -47,23 +47,25 @@ $result = mysqli_query($conn, $sql);
                     <th scope="col">ID</th>
                     <th scope="col">Name</th>
                     <th scope="col">Description</th>
-                    <th scope="col">Parent ID</th>
+                    <th scope="col">Unit</th>
+                    <th scope="col">Category ID</th>
                     <th scope="col">Image</th>
                     <th scope="col">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
-                <?php $srno = 1; While($category = mysqli_fetch_assoc($result)) {?> 
+                <?php $srno = 1; While($product = mysqli_fetch_assoc($result)) {?> 
                   <tr>
                     <th scope="row"><?php echo $srno;?></th>
-                    <td><?php echo $category['id']?></td>
-                    <td><?php echo $category['name']?></td>
-                    <td><?php echo $category['description']?></td>
-                    <td><?php echo $category['parent_id']?></td>
-                    <td><img src="<?php echo $category['image']?>" alt="<?php echo $category['name']?>" style="width: 100px"></td>
+                    <td><?php echo $product['id']?></td>
+                    <td><?php echo $product['name']?></td>
+                    <td><?php echo $product['description']?></td>
+                    <td><?php echo $product['unit']?></td>
+                    <td><?php echo $product['category_id']?></td>
+                    <td><img src="<?php echo $product['image']?>" alt="<?php echo $product['name']?>" style="width: 100px"></td>
                     <td>
-                        <a href="user.edit.php?id=<?php echo $category['id']?>" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-                        <a href="user.delete.php?id=<?php echo $category['id']?>" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></a>
+                        <a href="product.edit.php?id=<?php echo $product['id']?>" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                        <a href="product.delete.php?id=<?php echo $product['id']?>" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></a>
                   </tr>
                 <?php $srno++; }?>  
                 </tbody>
